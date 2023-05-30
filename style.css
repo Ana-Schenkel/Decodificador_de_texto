@@ -1,0 +1,73 @@
+body {
+  background-color: #f3f5fc;
+}
+header {
+  float: left;
+  width: 10%;
+}
+main {
+  width: 100%;
+  height: 600px;
+  margin: 2% 5% auto;
+  align-items: center;
+}
+div {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: auto;
+  box-sizing: border-box;
+}
+.entrada {
+  width: 60%;
+  height: 100%;
+  padding: 8% 5% 0 0;
+}
+.entrada textarea {
+  background-color: #f3f5fc;
+  border: 0px;
+  width: 100%;
+  height: 80%;
+}
+button {
+  width: 40%;
+  margin: 2%;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid #0a3871;
+}
+.cripto {
+  color: #ffffff;
+  background-color: #0a3871;
+}
+.descripto {
+  color: #0a3871;
+  background-color: #d8dfe8;
+}
+.saida {
+  background-color: #ffffff;
+  width: 25%;
+  height: 100%;
+  border-radius: 32px;
+}
+.saida img {
+  width: 80%;
+}
+
+/* Estilo Rodapé */
+footer {
+  padding: 5%;
+}
+.perfil {
+  display: inline-block;
+  border-radius: 50%;
+  width: 6rem;
+}
+.contato {
+  display: inline-block;
+}
+.github,
+.linkedin {
+  width: 3rem;
+  border-radius: 50%;
+}
