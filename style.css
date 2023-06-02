@@ -1,51 +1,67 @@
 body {
   background-color: #f3f5fc;
+  font-family: "Inter", sans-serif;
 }
 header {
-  float: left;
+  position: absolute;
   width: 10%;
 }
 main {
   width: 100%;
   height: 600px;
-  margin: 2% 5% auto;
+  margin: 2% 5%;
   align-items: center;
 }
 div {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  margin: auto;
   box-sizing: border-box;
 }
 .entrada {
-  width: 60%;
+  width: 65%;
   height: 100%;
-  padding: 8% 5% 0 0;
+  padding: 8% 5% 0;
+  margin: auto;
+  text-align: left;
 }
 .entrada textarea {
   background-color: #f3f5fc;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
   border: 0px;
   width: 100%;
   height: 80%;
 }
+::placeholder {
+  color: #0a3871;
+}
+.entrada p {
+  font-size: 0.8rem;
+  color: #495057;
+}
 button {
-  width: 40%;
-  margin: 2%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 45%;
   padding: 1rem;
   border-radius: 15px;
   border: 2px solid #0a3871;
 }
 .cripto {
+  margin: 2% 2% 2% 0;
   color: #ffffff;
   background-color: #0a3871;
 }
 .descripto {
+  margin: 2% 0 2% 2%;
   color: #0a3871;
   background-color: #d8dfe8;
 }
 .saida {
   background-color: #ffffff;
+  padding: 10% 2%;
+  margin: 0 2%;
   width: 25%;
   height: 100%;
   border-radius: 32px;
@@ -53,21 +69,44 @@ button {
 .saida img {
   width: 80%;
 }
+.saida h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+  color: #343a40;
+}
+.saida p {
+  margin: 1rem 0 0;
+  line-height: 1.5rem;
+  color: #343a40;
+}
 
 /* Estilo Rodapé */
 footer {
-  padding: 5%;
+  padding: 3% 4%;
+  background-color: #d8dfe8;
+}
+.icones {
+  width: 100%;
+  align-items: center;
 }
 .perfil {
-  display: inline-block;
   border-radius: 50%;
-  width: 6rem;
+  height: 6rem;
 }
 .contato {
-  display: inline-block;
+  vertical-align: bottom;
+  align-items: center;
+  width: 15%;
 }
 .github,
 .linkedin {
-  width: 3rem;
+  height: 4rem;
   border-radius: 50%;
+  margin: 0 3%;
+}
+.copyright {
+  color: #343a40;
+  text-align: center;
+  margin: 2% 0;
 }
