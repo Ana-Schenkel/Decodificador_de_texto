@@ -6,6 +6,8 @@ header {
   position: absolute;
   width: 10%;
 }
+
+/* Estilo main */
 main {
   height: 600px;
   margin: 2% 5%;
@@ -46,7 +48,7 @@ button {
   padding: 1rem;
   border-radius: 15px;
   color: #0a3871;
-  border: 2px solid #0a3871;
+  border: 1px solid #0a3871;
 }
 .cripto {
   margin: 2% 2% 2% 0;
@@ -104,6 +106,7 @@ button:hover {
   border: 3px solid #0a3871;
   font-weight: bolder;
   box-shadow: -2px 5px 20px #6b6f74;
+  cursor: pointer;
 }
 button:active {
   border: 2px solid #0a3871;
@@ -143,4 +146,87 @@ footer {
   color: #343a40;
   text-align: center;
   margin: 2% 0;
+}
+
+/* Estilo Responsivo */
+
+@media screen and (max-width: 1100px) {
+  /* Estilo Cabeçalho */
+  header {
+    position: relative;
+    display: block;
+    width: 10%;
+    margin: 5% 0;
+  }
+
+  /* Estilo main */
+  main {
+    height: auto;
+    margin: 2%;
+  }
+  div {
+    display: block;
+  }
+  .entrada {
+    aspect-ratio: 2/1;
+    width: 100%;
+    padding: 5% 5% 0;
+  }
+  .entrada textarea {
+    height: 75%;
+  }
+  button {
+    width: 46%;
+  }
+  .saida {
+    margin: 2%;
+    width: 96%;
+    height: auto;
+  }
+  .semMensagem {
+    height: 100%;
+    padding: 2%;
+  }
+  .saida img {
+    display: none;
+  }
+  .comMensagem {
+    padding: 2% 2rem 6rem 2rem;
+  }
+  .copiar {
+    bottom: 10%;
+  }
+  /* Estilo Rodapé */
+  .contato {
+    width: auto;
+  }
+}
+/*Estilo Celular*/
+@media screen and (max-width: 480px) {
+  .entrada {
+    aspect-ratio: 1/1;
+  }
+  button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+  .cripto {
+    margin: 5% 0;
+  }
+  .descripto {
+    margin: 5% 0;
+  }
+  .saida {
+    margin: 10% 2%;
+  }
+  .semMensagem {
+    padding: 2rem;
+  }
+  .saida img {
+    display: none;
+  }
+  .comMensagem {
+    padding: 2% 2rem 6rem 2rem;
+  }
 }
