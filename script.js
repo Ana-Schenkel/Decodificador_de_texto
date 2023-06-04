@@ -1,7 +1,8 @@
 function mostra() {
+  resultado.style.color = "#495057";
   if (cod != "") {
     inicio.style.display = "none";
-    document.querySelector(".resultado").innerHTML = cod;
+    resultado.innerHTML = cod;
     final.style.display = "inline-block";
     cod = "";
   } else {
@@ -12,9 +13,21 @@ function mostra() {
 
 function alerta() {
   var alerta = document.querySelector(".alerta");
-  alerta.style.color = "red";
-  //setInterval(100000);
-  //alerta.style.color = "#495057";
+  mostra();
+
+  var vermelho = setInterval(function () {
+    alerta.style.color = "red";
+  }, 150);
+
+  var preto = setInterval(function () {
+    alerta.style.color = "black";
+  }, 300);
+
+  setTimeout(function () {
+    clearInterval(vermelho);
+    clearInterval(preto);
+    alerta.style.color = "#495057";
+  }, 1500);
 }
 
 function criptografa() {
@@ -68,13 +81,14 @@ function descriptografa() {
 }
 
 function copia() {
-  let texto = document.querySelector(".resultado").innerText;
+  let texto = resultado.innerText;
   navigator.clipboard.writeText(texto);
-  alert("Copied the text: " + texto);
+  resultado.style.color = "#9ea1ca";
 }
 
 cod = "";
 var mensagem = document.querySelector("textarea");
+var resultado = document.querySelector(".resultado");
 
 var cripto = document.querySelector(".cripto");
 cripto.onclick = criptografa;
