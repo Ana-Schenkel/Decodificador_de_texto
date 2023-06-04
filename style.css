@@ -37,7 +37,7 @@ div {
 ::placeholder {
   color: #0a3871;
 }
-.entrada p {
+.alerta {
   font-size: 0.8rem;
   color: #495057;
 }
@@ -104,6 +104,7 @@ button {
 
 /* Estilo Rodapé */
 footer {
+  width: 100%;
   padding: 3% 4%;
   background-color: #d8dfe8;
 }
